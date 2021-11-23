@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED4FD295274D88360048CA05 /* wondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD294274D88360048CA05 /* wondaApp.swift */; };
+		ED4FD297274D88360048CA05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD296274D88360048CA05 /* ContentView.swift */; };
+		ED4FD299274D88380048CA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4FD298274D88380048CA05 /* Assets.xcassets */; };
+		ED4FD29C274D88380048CA05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4FD29B274D88380048CA05 /* Preview Assets.xcassets */; };
+		ED4FD2A6274D88390048CA05 /* wondaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD2A5274D88390048CA05 /* wondaTests.swift */; };
+		ED4FD2B0274D88390048CA05 /* wondaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD2AF274D88390048CA05 /* wondaUITests.swift */; };
+		ED4FD2B2274D88390048CA05 /* wondaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD2B1274D88390048CA05 /* wondaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED4FD2A2274D88390048CA05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4FD289274D88360048CA05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4FD290274D88360048CA05;
+			remoteInfo = wonda;
+		};
+		ED4FD2AC274D88390048CA05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4FD289274D88360048CA05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4FD290274D88360048CA05;
+			remoteInfo = wonda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED4FD291274D88360048CA05 /* wonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4FD294274D88360048CA05 /* wondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaApp.swift; sourceTree = "<group>"; };
+		ED4FD296274D88360048CA05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED4FD298274D88380048CA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED4FD29B274D88380048CA05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED4FD2A1274D88390048CA05 /* wondaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wondaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4FD2A5274D88390048CA05 /* wondaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaTests.swift; sourceTree = "<group>"; };
+		ED4FD2AB274D88390048CA05 /* wondaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wondaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4FD2AF274D88390048CA05 /* wondaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaUITests.swift; sourceTree = "<group>"; };
+		ED4FD2B1274D88390048CA05 /* wondaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4FD28E274D88360048CA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4FD29E274D88390048CA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4FD2A8274D88390048CA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED4FD288274D88360048CA05 = {
+			isa = PBXGroup;
+			children = (
+				ED4FD293274D88360048CA05 /* wonda */,
+				ED4FD2A4274D88390048CA05 /* wondaTests */,
+				ED4FD2AE274D88390048CA05 /* wondaUITests */,
+				ED4FD292274D88360048CA05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4FD292274D88360048CA05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FD291274D88360048CA05 /* wonda.app */,
+				ED4FD2A1274D88390048CA05 /* wondaTests.xctest */,
+				ED4FD2AB274D88390048CA05 /* wondaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4FD293274D88360048CA05 /* wonda */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FD294274D88360048CA05 /* wondaApp.swift */,
+				ED4FD296274D88360048CA05 /* ContentView.swift */,
+				ED4FD298274D88380048CA05 /* Assets.xcassets */,
+				ED4FD29A274D88380048CA05 /* Preview Content */,
+			);
+			path = wonda;
+			sourceTree = "<group>";
+		};
+		ED4FD29A274D88380048CA05 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FD29B274D88380048CA05 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED4FD2A4274D88390048CA05 /* wondaTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FD2A5274D88390048CA05 /* wondaTests.swift */,
+			);
+			path = wondaTests;
+			sourceTree = "<group>";
+		};
+		ED4FD2AE274D88390048CA05 /* wondaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED4FD2AF274D88390048CA05 /* wondaUITests.swift */,
+				ED4FD2B1274D88390048CA05 /* wondaUITestsLaunchTests.swift */,
+			);
+			path = wondaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4FD290274D88360048CA05 /* wonda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4FD2B5274D88390048CA05 /* Build configuration list for PBXNativeTarget "wonda" */;
+			buildPhases = (
+				ED4FD28D274D88360048CA05 /* Sources */,
+				ED4FD28E274D88360048CA05 /* Frameworks */,
+				ED4FD28F274D88360048CA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wonda;
+			productName = wonda;
+			productReference = ED4FD291274D88360048CA05 /* wonda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED4FD2A0274D88390048CA05 /* wondaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4FD2B8274D88390048CA05 /* Build configuration list for PBXNativeTarget "wondaTests" */;
+			buildPhases = (
+				ED4FD29D274D88390048CA05 /* Sources */,
+				ED4FD29E274D88390048CA05 /* Frameworks */,
+				ED4FD29F274D88390048CA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4FD2A3274D88390048CA05 /* PBXTargetDependency */,
+			);
+			name = wondaTests;
+			productName = wondaTests;
+			productReference = ED4FD2A1274D88390048CA05 /* wondaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED4FD2AA274D88390048CA05 /* wondaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4FD2BB274D88390048CA05 /* Build configuration list for PBXNativeTarget "wondaUITests" */;
+			buildPhases = (
+				ED4FD2A7274D88390048CA05 /* Sources */,
+				ED4FD2A8274D88390048CA05 /* Frameworks */,
+				ED4FD2A9274D88390048CA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4FD2AD274D88390048CA05 /* PBXTargetDependency */,
+			);
+			name = wondaUITests;
+			productName = wondaUITests;
+			productReference = ED4FD2AB274D88390048CA05 /* wondaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED4FD289274D88360048CA05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					ED4FD290274D88360048CA05 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ED4FD2A0274D88390048CA05 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ED4FD290274D88360048CA05;
+					};
+					ED4FD2AA274D88390048CA05 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ED4FD290274D88360048CA05;
+					};
+				};
+			};
+			buildConfigurationList = ED4FD28C274D88360048CA05 /* Build configuration list for PBXProject "wonda" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED4FD288274D88360048CA05;
+			productRefGroup = ED4FD292274D88360048CA05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4FD290274D88360048CA05 /* wonda */,
+				ED4FD2A0274D88390048CA05 /* wondaTests */,
+				ED4FD2AA274D88390048CA05 /* wondaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4FD28F274D88360048CA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4FD29C274D88380048CA05 /* Preview Assets.xcassets in Resources */,
+				ED4FD299274D88380048CA05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4FD29F274D88390048CA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4FD2A9274D88390048CA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED4FD28D274D88360048CA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4FD297274D88360048CA05 /* ContentView.swift in Sources */,
+				ED4FD295274D88360048CA05 /* wondaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4FD29D274D88390048CA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4FD2A6274D88390048CA05 /* wondaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4FD2A7274D88390048CA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4FD2B2274D88390048CA05 /* wondaUITestsLaunchTests.swift in Sources */,
+				ED4FD2B0274D88390048CA05 /* wondaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED4FD2A3274D88390048CA05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4FD290274D88360048CA05 /* wonda */;
+			targetProxy = ED4FD2A2274D88390048CA05 /* PBXContainerItemProxy */;
+		};
+		ED4FD2AD274D88390048CA05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4FD290274D88360048CA05 /* wonda */;
+			targetProxy = ED4FD2AC274D88390048CA05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED4FD2B3274D88390048CA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED4FD2B4274D88390048CA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED4FD2B6274D88390048CA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wonda/Preview Content\"";
+				DEVELOPMENT_TEAM = U2MLK22838;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mp.wonda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED4FD2B7274D88390048CA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wonda/Preview Content\"";
+				DEVELOPMENT_TEAM = U2MLK22838;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mp.wonda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED4FD2B9274D88390048CA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2MLK22838;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mp.wondaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wonda.app/wonda";
+			};
+			name = Debug;
+		};
+		ED4FD2BA274D88390048CA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2MLK22838;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mp.wondaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wonda.app/wonda";
+			};
+			name = Release;
+		};
+		ED4FD2BC274D88390048CA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2MLK22838;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mp.wondaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wonda;
+			};
+			name = Debug;
+		};
+		ED4FD2BD274D88390048CA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2MLK22838;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mp.wondaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wonda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED4FD28C274D88360048CA05 /* Build configuration list for PBXProject "wonda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4FD2B3274D88390048CA05 /* Debug */,
+				ED4FD2B4274D88390048CA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4FD2B5274D88390048CA05 /* Build configuration list for PBXNativeTarget "wonda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4FD2B6274D88390048CA05 /* Debug */,
+				ED4FD2B7274D88390048CA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4FD2B8274D88390048CA05 /* Build configuration list for PBXNativeTarget "wondaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4FD2B9274D88390048CA05 /* Debug */,
+				ED4FD2BA274D88390048CA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4FD2BB274D88390048CA05 /* Build configuration list for PBXNativeTarget "wondaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4FD2BC274D88390048CA05 /* Debug */,
+				ED4FD2BD274D88390048CA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED4FD289274D88360048CA05 /* Project object */;
+}
