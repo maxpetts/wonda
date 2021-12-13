@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3F00E0276794F7001AB3CA /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F00DF276794F7001AB3CA /* TextRecognition.swift */; };
+		ED3F00E22767EB90001AB3CA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F00E12767EB90001AB3CA /* ImagePicker.swift */; };
 		ED4FD295274D88360048CA05 /* wondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD294274D88360048CA05 /* wondaApp.swift */; };
 		ED4FD297274D88360048CA05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD296274D88360048CA05 /* ContentView.swift */; };
 		ED4FD299274D88380048CA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4FD298274D88380048CA05 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED3F00DF276794F7001AB3CA /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
+		ED3F00E12767EB90001AB3CA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ED4FD291274D88360048CA05 /* wonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4FD294274D88360048CA05 /* wondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaApp.swift; sourceTree = "<group>"; };
 		ED4FD296274D88360048CA05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED1D207427668D3900BE6E10 /* Vision Logic */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F00DF276794F7001AB3CA /* TextRecognition.swift */,
+			);
+			path = "Vision Logic";
+			sourceTree = "<group>";
+		};
 		ED4FD288274D88360048CA05 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +106,10 @@
 		ED4FD293274D88360048CA05 /* wonda */ = {
 			isa = PBXGroup;
 			children = (
+				ED1D207427668D3900BE6E10 /* Vision Logic */,
 				ED4FD294274D88360048CA05 /* wondaApp.swift */,
 				ED4FD296274D88360048CA05 /* ContentView.swift */,
+				ED3F00E12767EB90001AB3CA /* ImagePicker.swift */,
 				ED4FD298274D88380048CA05 /* Assets.xcassets */,
 				ED4FD29A274D88380048CA05 /* Preview Content */,
 			);
@@ -258,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED4FD297274D88360048CA05 /* ContentView.swift in Sources */,
+				ED3F00E22767EB90001AB3CA /* ImagePicker.swift in Sources */,
+				ED3F00E0276794F7001AB3CA /* TextRecognition.swift in Sources */,
 				ED4FD295274D88360048CA05 /* wondaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

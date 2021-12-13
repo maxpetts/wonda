@@ -6,53 +6,39 @@
 //
 
 import SwiftUI
-import Vision
+import UIKit
 
 struct ContentView: View {
     
     @State private var contained_text: String = ""
+    @State private var image = UIImage()
+    @State private var showPhotoLibrary = false
     
     var body: some View {
         VStack{
-            Image(uiImage: UIImage(named: "testimage1")!)
+            Image(uiImage: self.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(4)
                 .addRoundBorder(Color.black, width: 2, cornerRadius: 10)
-            Button("swap image", action: {})
+            
+            //            let imagePicker = UIImagePickerController()
+            //            imagePicker.sourceType = .photoLibrary
+            //            imagePicker.delegate = self
+            //            present(imagePicker, animated: true)
+            
+            Button("swap image", action: { self.showPhotoLibrary = true })
             Spacer()
-            Button("get text", action: {detect_text(UIImage(named: "testimage1"))})
+            Button("get text", action: {contained_text = detect_text(self.image)})
             Text(contained_text)
             Spacer()
             Text("By Max Petts (not a designer)")
                 .font(.caption2)
                 .foregroundColor(Color.gray)
+        }.sheet(isPresented: $showPhotoLibrary) {
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
         }.padding()
-    }
-    
-    func detect_text(_ image: UIImage?) {
-        guard let cgImage = image?.cgImage else { return }
-        
-        let req_handler = VNImageRequestHandler(cgImage: cgImage)
-        
-        let req = VNRecognizeTextRequest(completionHandler: completed_text_req)
-        
-        do {
-            try req_handler.perform([req])
-        } catch {
-            print("Unable to get reqs: \(error).")
-        }
-    }
-
-    func completed_text_req(req: VNRequest, err: Error?) {
-        guard let obs = req.results as? [VNRecognizedTextObservation] else {return}
-        
-        let found_strings = obs.compactMap{ obs in
-            return obs.topCandidates(1).first?.string
-        }.joined(separator: " ")
-        
-        contained_text = found_strings
     }
 }
 
