@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import UIKit
 
-struct ContentView: View {
+struct TextRecognitionView: View {
     
     @State private var contained_text: String = ""
     @State private var image = UIImage()
@@ -22,15 +21,22 @@ struct ContentView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(4)
                 .addRoundBorder(Color.black, width: 2, cornerRadius: 10)
-            
-            //            let imagePicker = UIImagePickerController()
-            //            imagePicker.sourceType = .photoLibrary
-            //            imagePicker.delegate = self
-            //            present(imagePicker, animated: true)
-            
             Button("swap image", action: { self.showPhotoLibrary = true })
             Spacer()
-            Button("get text", action: {contained_text = detect_text(self.image)})
+            Button(action: {
+                if (image.size.width == 0 || image.size.height == 0) {
+                    contained_text = "Please select an image first"
+                } else {
+                contained_text = detect_text(self.image)
+                }
+            }) {
+                Text("get text")
+                    .frame(minWidth: 250, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
+                    .padding(.horizontal)
+            }
             Text(contained_text)
             Spacer()
             Text("By Max Petts (not a designer)")
@@ -50,11 +56,3 @@ extension View {
             .overlay(roundedRect.strokeBorder(content, lineWidth: width))
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-

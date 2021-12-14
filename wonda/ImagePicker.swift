@@ -17,11 +17,13 @@ struct ImagePicker: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let imagePicker = UIImagePickerController()
 
-        if (UIImagePickerController.isSourceTypeAvailable(sourceType)) {
-            imagePicker.allowsEditing = false
-            imagePicker.sourceType = sourceType
-            imagePicker.delegate = context.coordinator
+        if (!UIImagePickerController.isSourceTypeAvailable(sourceType)) {
+            fatalError("Cannot find the source type of: \(sourceType)")
         }
+        
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = sourceType
+        imagePicker.delegate = context.coordinator
         
         return imagePicker
     }
