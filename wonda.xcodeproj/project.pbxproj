@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED3F00E0276794F7001AB3CA /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F00DF276794F7001AB3CA /* Logic.swift */; };
-		ED3F00E22767EB90001AB3CA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F00E12767EB90001AB3CA /* ImagePicker.swift */; };
+		ED31DACC277A458400C4D650 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED31DACB277A458400C4D650 /* Camera.swift */; };
+		ED3F00E22767EB90001AB3CA /* ImagePickerOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F00E12767EB90001AB3CA /* ImagePickerOLD.swift */; };
 		ED4FD295274D88360048CA05 /* wondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD294274D88360048CA05 /* wondaApp.swift */; };
-		ED4FD297274D88360048CA05 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD296274D88360048CA05 /* View.swift */; };
 		ED4FD299274D88380048CA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4FD298274D88380048CA05 /* Assets.xcassets */; };
 		ED4FD29C274D88380048CA05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4FD29B274D88380048CA05 /* Preview Assets.xcassets */; };
 		ED4FD2A6274D88390048CA05 /* wondaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD2A5274D88390048CA05 /* wondaTests.swift */; };
 		ED4FD2B0274D88390048CA05 /* wondaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD2AF274D88390048CA05 /* wondaUITests.swift */; };
 		ED4FD2B2274D88390048CA05 /* wondaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FD2B1274D88390048CA05 /* wondaUITestsLaunchTests.swift */; };
 		ED5E65722768BE2B00D11070 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E65712768BE2B00D11070 /* BaseView.swift */; };
+		ED864A532769004800DB2AC4 /* TextRecog_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E658C2768FD8100D11070 /* TextRecog_View.swift */; };
+		ED864A542769006100DB2AC4 /* FaceRecog_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E657B2768FC5000D11070 /* FaceRecog_View.swift */; };
+		ED864A552769006400DB2AC4 /* Rotate_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E658B2768FD6000D11070 /* Rotate_View.swift */; };
+		ED864A56276900DB00DB2AC4 /* TextRecog_Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E658D2768FD8100D11070 /* TextRecog_Logic.swift */; };
+		ED864A57276900DB00DB2AC4 /* FaceRecog_Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E657C2768FC5000D11070 /* FaceRecog_Logic.swift */; };
+		ED864A58276900DB00DB2AC4 /* Rotate_Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E658A2768FD6000D11070 /* Rotate_Logic.swift */; };
+		EDBAA3582779D2BF00D30C3C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAA3572779D2BF00D30C3C /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED3F00DF276794F7001AB3CA /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
-		ED3F00E12767EB90001AB3CA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ED31DACB277A458400C4D650 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		ED3F00E12767EB90001AB3CA /* ImagePickerOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerOLD.swift; sourceTree = "<group>"; };
 		ED4FD291274D88360048CA05 /* wonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4FD294274D88360048CA05 /* wondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaApp.swift; sourceTree = "<group>"; };
-		ED4FD296274D88360048CA05 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		ED4FD298274D88380048CA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4FD29B274D88380048CA05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED4FD2A1274D88390048CA05 /* wondaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wondaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +55,13 @@
 		ED4FD2AF274D88390048CA05 /* wondaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaUITests.swift; sourceTree = "<group>"; };
 		ED4FD2B1274D88390048CA05 /* wondaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wondaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ED5E65712768BE2B00D11070 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		ED5E657B2768FC5000D11070 /* FaceRecog_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecog_View.swift; sourceTree = "<group>"; };
+		ED5E657C2768FC5000D11070 /* FaceRecog_Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecog_Logic.swift; sourceTree = "<group>"; };
+		ED5E658A2768FD6000D11070 /* Rotate_Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotate_Logic.swift; sourceTree = "<group>"; };
+		ED5E658B2768FD6000D11070 /* Rotate_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotate_View.swift; sourceTree = "<group>"; };
+		ED5E658C2768FD8100D11070 /* TextRecog_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecog_View.swift; sourceTree = "<group>"; };
+		ED5E658D2768FD8100D11070 /* TextRecog_Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecog_Logic.swift; sourceTree = "<group>"; };
+		EDBAA3572779D2BF00D30C3C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +89,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED1D207427668D3900BE6E10 /* TextRecognition */ = {
-			isa = PBXGroup;
-			children = (
-				ED4FD296274D88360048CA05 /* View.swift */,
-				ED3F00DF276794F7001AB3CA /* Logic.swift */,
-			);
-			path = TextRecognition;
-			sourceTree = "<group>";
-		};
 		ED4FD288274D88360048CA05 = {
 			isa = PBXGroup;
 			children = (
@@ -109,10 +112,12 @@
 		ED4FD293274D88360048CA05 /* wonda */ = {
 			isa = PBXGroup;
 			children = (
-				ED1D207427668D3900BE6E10 /* TextRecognition */,
+				ED864A59276900FC00DB2AC4 /* Vision */,
 				ED4FD294274D88360048CA05 /* wondaApp.swift */,
 				ED5E65712768BE2B00D11070 /* BaseView.swift */,
-				ED3F00E12767EB90001AB3CA /* ImagePicker.swift */,
+				ED3F00E12767EB90001AB3CA /* ImagePickerOLD.swift */,
+				EDBAA3572779D2BF00D30C3C /* ImagePicker.swift */,
+				ED31DACB277A458400C4D650 /* Camera.swift */,
 				ED4FD298274D88380048CA05 /* Assets.xcassets */,
 				ED4FD29A274D88380048CA05 /* Preview Content */,
 			);
@@ -142,6 +147,19 @@
 				ED4FD2B1274D88390048CA05 /* wondaUITestsLaunchTests.swift */,
 			);
 			path = wondaUITests;
+			sourceTree = "<group>";
+		};
+		ED864A59276900FC00DB2AC4 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				ED5E658C2768FD8100D11070 /* TextRecog_View.swift */,
+				ED5E658D2768FD8100D11070 /* TextRecog_Logic.swift */,
+				ED5E657B2768FC5000D11070 /* FaceRecog_View.swift */,
+				ED5E657C2768FC5000D11070 /* FaceRecog_Logic.swift */,
+				ED5E658B2768FD6000D11070 /* Rotate_View.swift */,
+				ED5E658A2768FD6000D11070 /* Rotate_Logic.swift */,
+			);
+			path = Vision;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4FD297274D88360048CA05 /* View.swift in Sources */,
-				ED3F00E22767EB90001AB3CA /* ImagePicker.swift in Sources */,
+				ED31DACC277A458400C4D650 /* Camera.swift in Sources */,
+				ED3F00E22767EB90001AB3CA /* ImagePickerOLD.swift in Sources */,
+				ED864A542769006100DB2AC4 /* FaceRecog_View.swift in Sources */,
+				ED864A58276900DB00DB2AC4 /* Rotate_Logic.swift in Sources */,
 				ED5E65722768BE2B00D11070 /* BaseView.swift in Sources */,
-				ED3F00E0276794F7001AB3CA /* Logic.swift in Sources */,
+				ED864A552769006400DB2AC4 /* Rotate_View.swift in Sources */,
+				ED864A57276900DB00DB2AC4 /* FaceRecog_Logic.swift in Sources */,
+				ED864A56276900DB00DB2AC4 /* TextRecog_Logic.swift in Sources */,
+				EDBAA3582779D2BF00D30C3C /* ImagePicker.swift in Sources */,
+				ED864A532769004800DB2AC4 /* TextRecog_View.swift in Sources */,
 				ED4FD295274D88360048CA05 /* wondaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

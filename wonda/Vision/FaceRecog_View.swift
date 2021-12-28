@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct TextRecognitionView: View {
+struct FaceRecognitionView: View {
     
     @State private var contained_text: String = ""
-    @State private var image = UIImage()
     @State private var showPhotoLibrary = false
+    
+    @State private var image: Image?
+    @State private var selectedImage: UIImage?
     
     var body: some View {
         VStack{
-            Image(uiImage: self.image)
+            image?
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -24,13 +26,13 @@ struct TextRecognitionView: View {
             Button("swap image", action: { self.showPhotoLibrary = true })
             Spacer()
             Button(action: {
-                if (image.size.width == 0 || image.size.height == 0) {
-                    contained_text = "Please select an image first"
+                if ((selectedImage) != nil) {
+                    contained_text = detect_text(self.selectedImage)
                 } else {
-                contained_text = detect_text(self.image)
+                    contained_text = "Please select an image first"
                 }
             }) {
-                Text("get text")
+                Text("find face")
                     .frame(minWidth: 250, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
                     .background(Color.blue)
                     .foregroundColor(Color.white)
@@ -43,16 +45,15 @@ struct TextRecognitionView: View {
                 .font(.caption2)
                 .foregroundColor(Color.gray)
         }.sheet(isPresented: $showPhotoLibrary) {
-            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
-        }.padding()
+            ImagePicker(selectedImage: self.$selectedImage)
+        }
+        .padding()
+        .navigationTitle("Face Recognition")
+        .onChange(of: selectedImage) { _ in loadImage()}
     }
-}
-
-// Stealy Stealy: https://stackoverflow.com/questions/57753997/rounded-borders-in-swiftui
-extension View {
-    public func addRoundBorder<S>(_ content: S, width: CGFloat = 1, cornerRadius: CGFloat) -> some View where S : ShapeStyle {
-        let roundedRect = RoundedRectangle(cornerRadius: cornerRadius)
-        return clipShape(roundedRect)
-            .overlay(roundedRect.strokeBorder(content, lineWidth: width))
+    
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        image = Image(uiImage: selectedImage)
     }
 }

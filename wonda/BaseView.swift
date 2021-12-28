@@ -17,12 +17,30 @@ struct BaseView: View {
                     Image(systemName: "a.magnify")
                     Text("Text Recognition")
                 }
+                NavigationLink {
+                    RotateView()
+                } label: {
+                    Image(systemName: "arrow.clockwise.circle")
+                    Text("Auto Rotate Image")
+                }
+                NavigationLink {
+                    FaceRecognitionView()
+                } label: {
+                    Image(systemName: "face.dashed")
+                    Text("Face Recognition")
+                }
             }
-            .navigationTitle("Vision tasks")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    HStack {
+                        Image(systemName: "eye.fill").font(.largeTitle)
+                        Text("Wonda Vision").font(.title)
+                    }
+                }
+            }
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
