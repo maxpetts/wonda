@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Vision
 
 struct FaceRecognitionView: View {
     
     @State private var contained_text: String = ""
     @State private var showPhotoLibrary = false
+    @EnvironmentObject var faceDectector: FaceDetector
+    @State private var faces: [VNFaceObservation] = []
     
     @State private var image: Image?
     @State private var selectedImage: UIImage?
@@ -23,16 +26,21 @@ struct FaceRecognitionView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(4)
                 .addRoundBorder(Color.black, width: 2, cornerRadius: 10)
+                .overlay(facesView)
             Button("swap image", action: { self.showPhotoLibrary = true })
             Spacer()
             Button(action: {
                 if ((selectedImage) != nil) {
-                    contained_text = detect_text(self.selectedImage)
+                    contained_text = ""
+                    do {
+                        try faces = faceDectector.findFaces(UIImage: selectedImage!)
+                    }
+                    catch { print("error doing face") }
                 } else {
                     contained_text = "Please select an image first"
                 }
             }) {
-                Text("find face")
+                Text("find face(s)")
                     .frame(minWidth: 250, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
                     .background(Color.blue)
                     .foregroundColor(Color.white)
@@ -52,8 +60,37 @@ struct FaceRecognitionView: View {
         .onChange(of: selectedImage) { _ in loadImage()}
     }
     
+    var facesView: some View {
+        ZStack {
+            if faces.isEmpty {
+                Text("NON FOUND")
+            }
+            ForEach(faces, id: \.self) {
+                face in GeometryReader { geom in
+                    Rectangle()
+                        .rotation(.radians(-Double(truncating: face.roll ?? 0)), anchor: .center)
+                        .path(in: drawRect(on: face, size: geom.size))
+                        .stroke(Color.red, lineWidth: 2.5)
+                }
+            }
+        }
+    }
+    
     func loadImage() {
+        faces = []
         guard let selectedImage = selectedImage else { return }
         image = Image(uiImage: selectedImage)
+        do {
+            try faceDectector.findFaces(UIImage: selectedImage)
+        } catch {print("err finding faces")}
+    }
+    
+    func drawRect(on face: VNFaceObservation, size: CGSize) -> CGRect {
+        let rect = CGRect(
+            x: face.boundingBox.minX * size.width,
+            y: ((1 - face.boundingBox.maxY) * size.height),
+            width:  face.boundingBox.width * size.width,
+            height:  face.boundingBox.height * size.height)
+        return rect
     }
 }

@@ -25,6 +25,7 @@ struct BaseView: View {
                 }
                 NavigationLink {
                     FaceRecognitionView()
+                        .environmentObject(FaceDetector())
                 } label: {
                     Image(systemName: "face.dashed")
                     Text("Face Recognition")
